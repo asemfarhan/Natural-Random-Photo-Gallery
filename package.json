@@ -1,10 +1,10 @@
 {
-  "name": "app1",
+  "name": "NaturalGallery",
   "homepage": "https://asemfarhan.github.io/Natural-Random-Photo-Gallery",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.1.1", 
+    "gh-pages": "^2.1.1",
     "git-remote-origin-url": "^3.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

@@ -32,7 +32,7 @@ render ()
         return !arr.length ? 
              <h1 className="tc h11"> Loodaing ...</h1>
         :  (     <div>
-                        <p className=" tc h11">live the moment <b>happy... </b> </p>
+                        <p className=" tc pa2 ma4 h11">live the moment <b>happy... </b> </p>
                         < SearchBox searchChange={this.onSearchChange}/>
                         <Scroll>
                             <ErrorBundry>
