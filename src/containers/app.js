@@ -7,9 +7,6 @@ import ErrorBundry from '../components/ErrorBundry.js'
 
 import {setField_A, requestPhoto_A} from '../actions'
 
-
-
-
 //////mapStateToPraps
 const mapStateToPraps= state => {
    console.log("state",state);
@@ -30,13 +27,6 @@ const mapDispatchToProps= (dispatch)=>{
 }
 
 class App extends React.Component {
-
-
-// constructor (){
-//             super()
-//             this.state = {
-//                 arr: [] }
-//     }
 
 componentDidMount (){
     this.props.onRequestPhoto();
