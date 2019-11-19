@@ -15,19 +15,17 @@ const intialState ={
 }
 
 export const searchChange_R= (state=intialState, action={})=>{
-    switch (action.type)
-    {
+    switch (action.type){
         case CHANGE_SEARCH_FIELD:
         return Object.assign({}, state , { searchFieldText_R : action.payload } );
         default:
         return state;
-    }    
+    }
 }
 
 
 export const requestPhoto_R= (state=intialState, action={})=>{
-    switch (action.type)
-    {
+    switch (action.type){
         case REQUEST_PHOTO_PENDING:
             return Object.assign({}, state , { isPending :  true} );  
         case REQUEST_PHOTO_SUCCESS:

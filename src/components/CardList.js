@@ -3,11 +3,7 @@ import Cards from './Cards';
  
  
 const CardList= ({arr})=>
- { 
-// if (true){
-//      throw new Error("Hiiii   throw new Error");
-//     }
-  return (
+ {   return (
         <div className="center  tc  ">
         { arr.map((x , i)=>{
                     return (< Cards
