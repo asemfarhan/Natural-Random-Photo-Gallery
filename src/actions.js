@@ -1,5 +1,21 @@
-import {CHANGE_SEARCH_FIELD} from './constans.js';
+import {
+    CHANGE_SEARCH_FIELD,
+    REQUEST_PHOTO_PENDING,
+    REQUEST_PHOTO_SUCCESS,
+    REQUEST_PHOTO_FAILED,
+                             } from './constans.js';
 
-export const setSearchField= (text) =>({
+export const setField_A= (text) =>({
     type: CHANGE_SEARCH_FIELD,
     payload: text})
+
+    
+export const requestPhoto_A= (dispatch) => {
+    dispatch ({type: REQUEST_PHOTO_PENDING}) 
+    fetch('https://jsonplaceholnder.typicode.com/users')
+    .then(response  =>  response.json())
+    .then( data =>  dispatch({type: REQUEST_PHOTO_SUCCESS , payload: data}) )
+    .catch(error => dispatch({type: REQUEST_PHOTO_FAILED  , payload: error}))
+}
+
+ 

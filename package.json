@@ -1,5 +1,5 @@
 {
-  "name": "NaturalGallery",
+  "name": "naturalgallery",
   "homepage": "https://asemfarhan.github.io/Natural-Random-Photo-Gallery",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,7 @@
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "tachyons": "^4.11.1"
   },
   "scripts": {
